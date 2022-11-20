@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-duka</title>
+
+    <!-- webpage icon -->
+    <link rel="shortcut icon" href="webicon.png">
+
+     <!-- CSS styling -->
+     <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: cursive;
+        background-color: white;
+      }
+
+      header {
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.938);
+        margin: 0px;
+        justify-content: center;
+      }
+
+      header h1 {
+        color: rgba(255, 140, 0, 0.808);
+        font-weight: 600;
+      }
+
+      nav {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.938);
+        margin-top: 3px;
+        justify-content: center;
+        word-spacing: 1.3cm;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+      ul li {
+        display: inline-block;
+        margin: 0 10px;
+        list-style: none;
+        position: relative;
+      }
+      ul li a:hover {
+        color: rgba(255, 140, 0, 0.808);
+      }
+      ul li::after {
+        content: "";
+        height: 3px;
+        width: 0;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+      }
+      ul li:hover::after {
+        width: 100%;
+      }
+      main {
+        margin: 10px 300px;
+        background-color: rgba(128, 128, 128, 0.712);
+        width: 70%;
+        border-radius: 10px;
+        text-align: center;
+        
+
+        /*this is so that the pages with less content are not so short*/
+        min-height: 500px;
+      }
+      footer {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.938);
+      }
+      footer h4 {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: x=small;
+      }
+      .logo{
+        flex-grow: 1
+      }
+      .logo a img{
+        margin-top: 5px; 
+        margin-left: 5px; 
+        padding: 5px;
+      }
+      .title{
+        flex-grow: 1
+      }
+      .title h1{
+        padding: 10px;
+      }
+      .title a img{
+        float: right; 
+        border-radius: 50%; 
+        margin-top: -70px; 
+        margin-right: 10px;
+      }
+     </style>
+</head>
+<body>
+     <!-- header -->
+     <header>
+        <div class="logo">
+          <a href="#"><img src="logo.png" width="100px" height="100px" /></a>
+        </div>
+        <div class="title">
+          <h1>E-duka</h1>
+          <a href="#"><img src="user.png" width="50px" height="50px" /></a>
+        </div>
+      </header>
+  
+      <!-- navigation bar -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Orders</a></li>
+        </ul>
+      </nav>
+  
+      <main>
+        
+        <div class="prof">
+          <H2> Customer Profile</H2><br>
+          <h4>ADDRESS</h4>
+          <p>Location:Kilimani, Nairobi.</p>
+          <p>Mail:P.O BOX 753-00100</p>
+          <p>Pick-up point: Yaya centre</p>
+        </div>
+             <div class="data">
+                      <h4>Personal information</h4>
+                      <p>Date of birth: 19/02/1997</p>
+                      <p>Phone number: 0710508793</p>
+                   
+                      <p>Email: karemackenzie@gmail.com</p>
+                 </div>
+                 </div>
+                 <style>
+                  .sidebar{
+         background-color:rgba(255, 140, 0, 1);
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 225px;
+         height: 500px;
+         padding: 20px 0;
+        margin-top: 177px;
+        border-radius: 10px;
+         transition: all 0.5s ease;
+       }
+       
+        .sidebar .profile{
+         margin-bottom: 30px;
+         text-align: center;
+       }
+       .sidebar .item a {
+         display: inline-block;
+       }
+      .sidebar .profile img{
+         display: block;
+         width: 100px;
+         height: 100px;
+           border-radius: 50%;
+         margin: 0 auto;
+       }
+       
+        .sidebar .profile h3{
+         color: #ffffff;
+         margin: 10px 0 5px;
+       }
+       
+        .sidebar .profile p{
+         color: rgb(206, 240, 253);
+         font-size: 14px;
+       }
+          .sidebar .menu link a{
+             color: rgb(206, 240, 253);
+             font-size: 10px;
+          }
+             </style>
+     
+             <div class="sidebar">
+               <div class="profile">
+                   <img width="100" height="100" src="images/profpic.svg"/>
+                   <h3>Kate Mackenzie</h3>
+                   <p> katemackenzie@gmail.com</p>
+                   <p> Kilimani,Nairobi, Ke.</p>
+                   <button>Edit Profile</button>
+
+                   <br><br><br>
+                                
+               </div>
+      </main>
+        <!-- individual content goes in here -->
+       
+  
+      <!-- footer -->
+      <footer>
+        <h4>Pay Less For More.</h4>
+      </footer>
+</body>
+</html>
